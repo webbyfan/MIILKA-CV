@@ -1,0 +1,180 @@
+/* Resume Card Styles */
+
+.resume-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.resume-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-color: #7c3aed;
+  transform: translateY(-4px);
+}
+
+/* Resume Header */
+.resume-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.resume-icon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.resume-info {
+  flex: 1;
+}
+
+.resume-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111;
+  margin: 0 0 4px 0;
+  word-break: break-word;
+}
+
+.resume-date {
+  font-size: 12px;
+  color: #999;
+  margin: 0;
+}
+
+/* ATS Score Section */
+.resume-ats {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ats-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #666;
+  white-space: nowrap;
+}
+
+.ats-score-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ats-progress {
+  flex: 1;
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.ats-progress-bar {
+  height: 100%;
+  background: linear-gradient(to right, #7c3aed, #6d28d9);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.ats-value {
+  font-size: 13px;
+  font-weight: 700;
+  color: #7c3aed;
+  min-width: 40px;
+  text-align: right;
+}
+
+/* Action Buttons */
+.resume-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.btn-edit {
+  background: #f0f0f0;
+  color: #111;
+  border: 1px solid #e0e0e0;
+}
+
+.btn-edit:hover {
+  background: #7c3aed;
+  color: white;
+  border-color: #7c3aed;
+}
+
+.btn-delete {
+  background: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+.btn-delete:hover {
+  background: #ef4444;
+  color: white;
+  border-color: #ef4444;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .resume-card {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .resume-title {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-card {
+    padding: 12px;
+  }
+
+  .resume-ats {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .ats-score-container {
+    width: 100%;
+  }
+
+  .ats-value {
+    min-width: 30px;
+  }
+}

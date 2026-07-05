@@ -1,0 +1,53 @@
+# Node / dependencies
+node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+build/
+**/dist/
+**/build/
+.vite/
+
+# Environment files (never commit secrets)
+.env
+.env.*.local
+.env.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Test / coverage
+coverage/
+.nyc_output/
+
+# Package lockfiles (optional, include if you don't want to commit)
+# package-lock.json
+# yarn.lock
+
+# Frontend specific
+front/front/dist/
+front/front/.cache/
+front/front/.env
+front/front/.env.local
+
+# Backend specific
+backend/.env
+backend/logs/
+backend/tmp/
+
+# Misc
+*.tgz
+*.log
